@@ -1,8 +1,8 @@
-import Image from "next/image";
+// import Image from "next/image";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return <div>Hello</div>
+  return <div>Hi</div>
 };
 
 export default Home;

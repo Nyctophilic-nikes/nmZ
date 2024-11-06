@@ -1,3 +1,5 @@
+// "use client";  
+
 import '@fontsource/open-sans/300.css';
 import '@fontsource/open-sans/400.css';
 import '@fontsource/open-sans/700.css';
@@ -16,7 +18,7 @@ export const theme = extendTheme({
     styles: {
         global: () => ({
             body: {
-                bg: "gray.900",
+                bg: "gray.100",
             },
         }),
     },
