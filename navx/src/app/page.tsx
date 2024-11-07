@@ -2,7 +2,11 @@
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
-  return <div>Hello this is my first deployed website for testing</div>
+  return (
+    <div style={{ color: "white" }}>
+      Hello, this is my first deployed website for testing
+    </div>
+  );
 };
 
 export default Home;

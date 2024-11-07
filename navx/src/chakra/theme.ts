@@ -18,11 +18,20 @@ export const theme = extendTheme({
     styles: {
         global: () => ({
             body: {
-                bg: "gray.100",
+                bg: "gray.800",
             },
         }),
     },
     components: {
         // Button
+    },
+    textStyles: {
+        h1: {
+            // you can also use responsive styles
+            fontSize: ['48px', '72px'],
+            fontWeight: 'bold',
+            lineHeight: '110%',
+            letterSpacing: '-2%',
+        },
     },
 });

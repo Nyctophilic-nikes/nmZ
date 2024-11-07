@@ -6,6 +6,7 @@
 import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "../chakra/theme"
+import Layout from "@/components/Layout/Layout";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -30,7 +31,11 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning>
       <body>
-        <ChakraProvider theme={theme}>{children}</ChakraProvider>
+        <ChakraProvider theme={theme}>
+          <Layout>
+          {children}
+          </Layout>
+        </ChakraProvider>
       </body>
     </html>
   )
