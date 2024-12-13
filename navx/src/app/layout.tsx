@@ -7,6 +7,7 @@ import "./globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "../chakra/theme"
 import Layout from "@/components/Layout/Layout";
+import { RecoilRoot } from "recoil";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -29,14 +30,16 @@ import Layout from "@/components/Layout/Layout";
 export default function RootLayout(props: { children: React.ReactNode }) {
   const { children } = props
   return (
-    <html suppressHydrationWarning>
-      <body>
-        <ChakraProvider theme={theme}>
-          <Layout>
-          {children}
-          </Layout>
-        </ChakraProvider>
-      </body>
-    </html>
+    <RecoilRoot>
+      <html suppressHydrationWarning>
+        <body>
+          <ChakraProvider theme={theme}>
+            <Layout>
+            {children}
+            </Layout>
+          </ChakraProvider>
+        </body>
+      </html>
+    </RecoilRoot>
   )
 }
